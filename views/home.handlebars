@@ -1,0 +1,15 @@
+<h2>Posts Cadastrados</h2>
+
+<!- each significa cada->
+{{#each posts}}
+
+    <small>{{createdAt}}</small>
+    <h3>{{titulo}}</h3>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <a href="/editar/{{id}}"><button>Editar</button></a>
+    <hr>
+
+{{/each}}
+
+<a href="/cadastro"><button>Novo cadastro</button></a>
